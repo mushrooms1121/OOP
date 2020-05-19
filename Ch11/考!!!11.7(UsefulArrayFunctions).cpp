@@ -13,32 +13,32 @@ int main()
 	int list[] = { 4,2,3,6,5,1 };
 	printArray(list, 6);
 
-	int* min = min_element(list, list + 6); //(listªº²Ä0¦ì¸m(first), listªº²Ä5¦ì¸m(last))
+	int* min = min_element(list, list + 6); //(listçš„ç¬¬0ä½ç½®(first), listçš„ç¬¬5ä½ç½®(last))
 	int* max = max_element(list, list + 6);
-	cout << "The min value is " << *min << " at index " << (min - list) << endl; //index¬°¯Á¤Ş 1¦b²Ä¤­­Ó¦ì¸m(5-0)
+	cout << "The min value is " << *min << " at index " << (min - list) << endl; //indexç‚ºç´¢å¼• 1åœ¨ç¬¬äº”å€‹ä½ç½®(5-0)
 	cout << "The max value is " << *max << " at index " << (max - list) << endl;
 
-	random_shuffle(list, list + 6); //ÀH¾÷¬~µP
+	random_shuffle(list, list + 6); //éš¨æ©Ÿæ´—ç‰Œ
 	printArray(list, 6);
 
-	sort(list, list + 6); //±Æ§Ç ¦Ò¸Õ¥i¯à¦Òªº¨ç¦¡!!!
+	sort(list, list + 6); //æ’åº è€ƒè©¦å¯èƒ½è€ƒçš„å‡½å¼!!!
 	printArray(list, 6);
 
 	int key1 = 4;
-	int* p1 = find(list, list + 6, key1); //¬d¸ß±q«ü©w¦ì¸m¶}©lªº²Ä¤@¦¸¥X²{ªº¥Ø¼Ğ¦r¦ê(first,last,¥Ø¼Ğ)
+	int* p1 = find(list, list + 6, key1); //æŸ¥è©¢å¾æŒ‡å®šä½ç½®é–‹å§‹çš„ç¬¬ä¸€æ¬¡å‡ºç¾çš„ç›®æ¨™å­—ä¸²(first,last,ç›®æ¨™)
 	if (p1 != list + 6)
 		cout << "The value " << *p1 << " is found at position " << (p1 - list) << endl; 
-		//find·|¶Ç¦^¸Ó­Èªº¦ì§} cout¦b¸Ñ°Ñ·Ó¦L¥X¸Ó­È
+		//findæœƒå‚³å›è©²å€¼çš„ä½å€ coutåœ¨è§£åƒç…§å°å‡ºè©²å€¼
 	else
 		cout << "The value " << *p1 << " is not found" << endl;
 
 	int key2 = 10;
-	int* p2 = find(list, list + 6, key2); //¦pªG§ä¤£¨ì¸Ó­È ·|¶Ç¦^¸Ó°}¦Cªº³Ì«á¤@­Ó­Èªº¦ì§}
+	int* p2 = find(list, list + 6, key2); //å¦‚æœæ‰¾ä¸åˆ°è©²å€¼ æœƒå‚³å›è©²é™£åˆ—çš„æœ€å¾Œä¸€å€‹å€¼çš„ä½å€
 	if (p2 != list + 6)
 		cout << "The value " << *p2 << " is found at position " << (p2 - list) << endl;
 	else
 		cout << "The value " << *p2 << " is not found" << endl; 
-		//³Ì«á¤@­Ó­È¬Olist+6(list[6]) ¦ılist¥u¨ìlist[5]¦Ó¤w ¨ÃµLlist[6]³o­Ó­È ©Ò¥H¸Ñ°Ñ·Ó¥X¨Ó¶Ã¼Æ
+		//æœ€å¾Œä¸€å€‹å€¼æ˜¯list+6(list[6]) ä½†liståªåˆ°list[5]è€Œå·² ä¸¦ç„¡list[6]é€™å€‹å€¼ æ‰€ä»¥è§£åƒç…§å‡ºä¾†äº‚æ•¸
 
 	system("pause");
 	return 0;
