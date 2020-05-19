@@ -10,7 +10,7 @@ public:
 	Course(const string& courseName,int capacity);
 	string getCourseName()const;
 	void addStudent(const string& name);
-	void dropStudent()const;
+	void dropStudent(const string& name);
 	string* getStudent()const;
 	int getNumberOfStudents()const;
 
@@ -40,7 +40,7 @@ void Course::addStudent(const string& name)
 	student[numberOfStudents] = name;
 	numberOfStudents++;
 }
-void Course::dropStudent()const{}
+void Course::dropStudent(const string& name){}
 string* Course::getStudent()const
 {
 	return student;
