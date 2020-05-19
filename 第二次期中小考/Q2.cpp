@@ -17,7 +17,7 @@ int main()
 {
 	const int SIZE = 6;
 	char list1[] = {'a','b','c','d','e','f'},newList[SIZE];
-	double list2[] = { 1.1,2.2,3.3,4.4,5.5,6.6 },newList2[SIZE]; //³£­n¦³newList[SIZE]
+	double list2[] = { 1.1,2.2,3.3,4.4,5.5,6.6 },newList2[SIZE]; //æ¯å€‹éƒ½è¦åŠ newList[SIZE]
 
 	reverse(list1, newList, SIZE);
 	cout << "The original array: ";
