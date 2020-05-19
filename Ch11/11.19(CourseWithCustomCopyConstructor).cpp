@@ -32,7 +32,7 @@ Course::Course(const string& courseName, int capacity)
 	this->capacity = capacity;
 	student = new string[capacity];
 }
-Course::Course(const Course& course) //½Æ»s«ØºcªÌ
+Course::Course(const Course& course) //新增新的建構子
 {
 	courseName = course.courseName;
 	numberOfStudents = course.numberOfStudents;
