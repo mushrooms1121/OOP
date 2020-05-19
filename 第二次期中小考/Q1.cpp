@@ -7,14 +7,14 @@ int min(vector<vector<int>>m)
 	int min = m[0][0];
 	for (int i = 0; i < 4; i++)
 	{
-		for (int j = 0; j < 3; j++) min = (min > m[i][j]) ? m[i][j] : min;
+		for (int j = 0; j < 3; j++) min = (min > m[i][j]) ? m[i][j] : min; //if寫法 慢慢改成這種
 	}
 	return min;
 }
 
 int main()
 {
-	vector<vector<int>>m(4,vector<int>(3));
+	vector<vector<int>>m(4,vector<int>(3)); //vector是這樣宣告
 
 	for (int i = 0; i < 4; i++)
 	{
