@@ -29,7 +29,7 @@ Circle::Circle()
 }
 Circle::Circle(double radius)
 {
-	this->radius = radius; //¤]¥i¥H¼g(*this).radius
+	this->radius = radius; //也可以打成(*this).radius
 	numberOfObjects++;
 }
 Circle::~Circle()
