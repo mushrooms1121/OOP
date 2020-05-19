@@ -29,7 +29,7 @@ Circle::Circle()
 }
 Circle::Circle(double radius)
 {
-	this->radius = radius; //¤]¥i¥H¼g(*this).radius
+	this->radius = radius;
 	numberOfObjects++;
 }
 Circle::~Circle()
@@ -60,7 +60,7 @@ using namespace std;
 int main()
 {
 	Circle circle1(5);
-	Circle circle2(circle1); //½Æ»scircle1ªº­È
+	Circle circle2(circle1); //複製circle1的值
 
 	cout << "After creating circle2 from circle1: " << endl;
 	cout << "\tcircle1.getRandius() returns " << circle1.getRadius() << endl;
