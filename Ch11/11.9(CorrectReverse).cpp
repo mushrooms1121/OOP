@@ -1,10 +1,31 @@
+#ifndef CIRCLE_H
+#define CIRCLE_H
+
+class Circle
+{
+public:
+	Circle();
+	Circle(double);
+	~Circle();
+	double getArea() const;
+	double getRadius() const;
+	void setRadius(double);
+	static int getNumberOfObjects();
+
+private:
+	double radius;
+	static int numberOfObjects;
+};
+#endif
+
+
 #include <iostream>
 using namespace std;
 
 int* reverse(const int* list, int size)
 	{
-		int* result =new int[size]; //°ÊºA°t¸m(¨Ò¦p:size¬O5 ¦ı­n¦s10µ§ ¨º»òsize´N¥i¥H»´ÃP¦s10µ§)
-		//new·|°O¾ĞÅéªº¨C¤@®æªì©l¤Æ ©Ò¥H´N¤£·|¦³¶Ã¼Æ²£¥Í
+		int* result =new int[size]; //å‹•æ…‹é…ç½®(ä¾‹å¦‚:sizeæ˜¯5 ä½†è¦å­˜10ç­† é‚£éº¼sizeå°±å¯ä»¥è¼•é¬†å­˜10ç­†)
+		//newæœƒè¨˜æ†¶é«”çš„æ¯ä¸€æ ¼åˆå§‹åŒ– æ‰€ä»¥å°±ä¸æœƒæœ‰äº‚æ•¸ç”¢ç”Ÿ
 		for (int i = 0, j = size - 1; i < size; i++, j--) result[j] = list[i];
 		return result;
 	}
