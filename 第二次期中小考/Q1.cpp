@@ -20,7 +20,7 @@ int main()
 	{
 		for (int j = 0; j < 3; j++) cin >> m[i][j];
 	}
-	cout << "min:" << min(m) << endl;
+	cout << "min: " << min(m) << endl;
 
 	system("pause");
 	return 0;
