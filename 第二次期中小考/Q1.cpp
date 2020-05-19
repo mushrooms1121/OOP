@@ -14,7 +14,7 @@ int min(vector<vector<int>>m)
 
 int main()
 {
-	vector<vector<int>>m(4,vector<int>(3)); //vector是這樣宣告
+	vector<vector<int>>m(4,vector<int>(3)); //vector是這樣宣告 記住!!!
 
 	for (int i = 0; i < 4; i++)
 	{
