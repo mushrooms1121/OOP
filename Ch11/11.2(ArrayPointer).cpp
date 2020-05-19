@@ -7,7 +7,7 @@ int main()
 
 	for (int i = 0; i < 6; i++)
 		cout << "address: " << (list + i) << " value: " << *(list + i) << " " << "value: " << list[i] << endl;
-	//listªº°O¾ÐÅé¦ì¸m¬°008FF8A8 ©Ò¥Hlist+1¬°008FF8A8+4=008FF8AC
+	//listçš„è¨˜æ†¶é«”ä½ç½®ç‚º008FF8A8 æ‰€ä»¥list+1ç‚º008FF8A8+4=008FF8AC
 
 	system("pause");
 	return 0;
