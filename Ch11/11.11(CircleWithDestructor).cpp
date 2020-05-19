@@ -1,3 +1,23 @@
+#ifndef CIRCLE_H
+#define CIRCLE_H
+
+class Circle
+{
+public:
+	Circle();
+	Circle(double);
+	~Circle();
+	double getArea() const;
+	double getRadius() const;
+	void setRadius(double);
+	static int getNumberOfObjects();
+
+private:
+	double radius;
+	static int numberOfObjects;
+};
+#endif
+----------------------------------------------------------------------------------------------------------------------------------------
 #include "CircleWithDestructor.h"
 
 int Circle::numberOfObjects = 0;
@@ -9,7 +29,7 @@ Circle::Circle()
 }
 Circle::Circle(double radius)
 {
-	this->radius = radius; //¤]¥i¥H¼g(*this).radius
+	this->radius = radius; //Â¤]Â¥iÂ¥HÂ¼g(*this).radius
 	numberOfObjects++;
 }
 Circle::~Circle()
@@ -32,3 +52,4 @@ int Circle::getNumberOfObjects()
 {
 	return numberOfObjects;
 }
+----------------------------------------------------------------------------------------------------------------------------------------
