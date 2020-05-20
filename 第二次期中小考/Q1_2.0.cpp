@@ -5,8 +5,7 @@ using namespace std;
 
 int main()
 {
-	vector<vector<int>>m(4, vector<int>(3)); //vector是這樣宣告 記住!!!
-
+	vector<vector<int>>m(4, vector<int>(3));
 	for (int i = 0; i < 4; i++)
 	{
 		for (int j = 0; j < 3; j++) cin >> m[i][j];
