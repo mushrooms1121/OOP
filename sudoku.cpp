@@ -8,14 +8,14 @@ int flag = 1, total = 0;
 
 void gotoxy(int x, int y) {
 	++x, ++y;
-	COORD pos;//ªí¥Ü¤@­Ó¦r¤¸¦b±±¨îÂi¿Ã¹õ¤Wªº®y¼Ð
+	COORD pos;//è¡¨ç¤ºä¸€å€‹å­—å…ƒåœ¨æŽ§åˆ¶æª¯èž¢å¹•ä¸Šçš„åº§æ¨™
 	pos.X = x;
 	pos.Y = y;
-}//´å¼Ð±±¨î¼Ò²Õ
+}//æ¸¸æ¨™æŽ§åˆ¶æ¨¡çµ„
 
 void Show(int input, int board[9][9], int sudoku[9][9][2]) {//30<=input<=55 
-	time_t seed; //seed«ü°_©lÂI §Y³Ì¤p­È1
-	srand(time(&seed)); //§ïÅÜ¤@¶}©lªº¶Ã¼Æ­È ³]©w¶Ã¼ÆºØ¤l
+	time_t seed; //seedæŒ‡èµ·å§‹é»ž å³æœ€å°å€¼1
+	srand(time(&seed)); //æ”¹è®Šä¸€é–‹å§‹çš„äº‚æ•¸å€¼ è¨­å®šäº‚æ•¸ç¨®å­
 	int a = 0;
 	for (int i = 0; i < 9; ++i) {
 		for (int j = 0; j < 9; ++j) {
@@ -46,7 +46,7 @@ int main()
 			sudoku[i][j][1] = 0;
 		}
 	}
-	Show(input, board, sudoku);//ÀH¾÷«õªÅ 
+	Show(input, board, sudoku);//éš¨æ©ŸæŒ–ç©º 
 
 	system("pause");
 	return 0;
