@@ -33,9 +33,6 @@ public:
 	Complex operator-();
 
 private:
-
 	int a, b;
-
 };
-
 #endif // !Complex_H
