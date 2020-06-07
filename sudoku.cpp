@@ -7,15 +7,15 @@ using namespace std;
 void gotoxy(int x, int y) 
 {
 	++x, ++y;
-	COORD pos;//ªí¥Ü¤@­Ó¦r¤¸¦b±±¨îÂi¿Ã¹õ¤Wªº®y¼Ð
+	COORD pos;//è¡¨ç¤ºä¸€å€‹å­—å…ƒåœ¨æŽ§åˆ¶æª¯èž¢å¹•ä¸Šçš„åº§æ¨™
 	pos.X = x;
 	pos.Y = y;
-}//´å¼Ð±±¨î¼Ò²Õ
+}//æ¸¸æ¨™æŽ§åˆ¶æ¨¡çµ„
 
 void Show(int input, int board[9][9], int sudoku[9][9][2]) //30<=input<=55 
 {
-	time_t seed; //seed«ü°_©lÂI §Y³Ì¤p­È1
-	srand(time(&seed)); //§ïÅÜ¤@¶}©lªº¶Ã¼Æ­È ³]©w¶Ã¼ÆºØ¤l
+	time_t seed; //seedæŒ‡èµ·å§‹é»ž å³æœ€å°å€¼1
+	srand(time(&seed)); //æ”¹è®Šä¸€é–‹å§‹çš„äº‚æ•¸å€¼ è¨­å®šäº‚æ•¸ç¨®å­
 	int a = 0;
 	for (int i = 0; i < 9; ++i) 
 	{
@@ -28,7 +28,7 @@ void Show(int input, int board[9][9], int sudoku[9][9][2]) //30<=input<=55
 	}
 	while (a < input) 
 	{
-		int m = rand() % 9, n = rand() % 9; //§Y«ü©w½d³ò»Ý­n¥Ñ°_©l¼Æ¶}©l¨ú9­Ó¼Æ­È¡A¥]¬A°_©l¼Æ
+		int m = rand() % 9, n = rand() % 9; //å³æŒ‡å®šç¯„åœéœ€è¦ç”±èµ·å§‹æ•¸é–‹å§‹å–9å€‹æ•¸å€¼ï¼ŒåŒ…æ‹¬èµ·å§‹æ•¸
 		if (sudoku[m][n][1] == 0) 
 		{
 			gotoxy(5 + n * 4, m * 2 + 2);
@@ -50,7 +50,7 @@ int main()
 			sudoku[i][j][1] = 0;
 		}
 	}
-	Show(input, board, sudoku);//ÀH¾÷«õªÅ 
+	Show(input, board, sudoku);//éš¨æ©ŸæŒ–ç©º 
 
 	system("pause");
 	return 0;
